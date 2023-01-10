@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width",initial-scale=1.0>
+<title>Light</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+    <nav>
+        <img src="butterfly.png" class="image">
+        <img src="logo1.png" class="logo1">
+        <ul>
+            <li><a href="">Home</a> </li>
+            <li><a href="login.html">Login</a> </li>
+            <!--<li><a href="singup.html">Sign Up</a> </li>-->
+            <li><a href="">Help</a> </li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+    <div class="lamp-container">
+        <img src="lamp1.png" class="lamp1">
+        <img src="light.png" class="light" id="light">
+    </div>
+    <div class="text-container">
+        <h1 class="glow"><i>Light !</i></h1>
+        <p class="glow"><q>Let Your Light Shine</q></p>
+        <a href="singup.html">Join The Light Now!</a>
+        <div class="control">
+        <p>Start</p>
+        <div class="line"><span></span></div>
+        <p>End</p>
+        </div>
+    </div>
+</div>
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+</body>
+</html>
